@@ -48,7 +48,7 @@ figure {
 	position: relative;
 }
 
-figcaption {
+.caption {
 	margin-top: 10px;
 	text-align: center;
 	font-size: .9em;
@@ -58,7 +58,7 @@ figcaption {
 }
 
 
-figcaption p {
+.caption p {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -87,25 +87,6 @@ figcaption p {
   outline-style: none;
 }
 
-keyframes glaucoma {
-  from {
-    opacity: 1;
-    text-shadow: 0 0 75px black;
-    color: transparent;
-  }
-
-  to {
-    opacity: 1;
-    text-shadow: 0;
-    color: transparent;
-  }
-}
-
-.portfolio-animation:hover {
-  animation-name: glaucoma;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-}
 
 /* ================================= 
   Base Layout Styles
