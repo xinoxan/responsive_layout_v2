@@ -96,7 +96,7 @@ figure {
 
 .name {
 	font-size: 1.25em;
-	margin: 0;
+	text-align: center;
 }
 
 .main-nav {
@@ -209,7 +209,7 @@ text-align: center;
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 	body {
 		padding-top: 68px;
@@ -243,6 +243,7 @@ text-align: center;
 	 .column{
 		float: left;
 	}
+
 
 	.primary,
 	.secondary,
@@ -282,7 +283,7 @@ text-align: center;
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	
 	.container {
 		width: 80%;
