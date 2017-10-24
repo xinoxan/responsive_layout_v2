@@ -1,0 +1,329 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	background-color: #fafafa;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #4a4a4a;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	margin-top: 10px;
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.5;
+	color: #4a4a4a;
+	padding: 1em;	
+}
+
+
+figcaption p {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.subfooter{
+	font-size: .8em !important;
+}
+
+.subfooter-line{
+	 border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/** Remove the outer glow when the anchor scroll is active **/
+
+	#portfolio, #contact, #top {
+		border: none;
+	  text-decoration:none; 
+	 outline-color: transparent;
+  outline-style: none;
+	}
+
+	:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+keyframes glaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px black;
+    color: transparent;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
+
+.portfolio-animation:hover {
+  animation-name: glaucoma;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #4a4a4a;
+		text-transform: uppercase;
+	}
+
+	.main-nav a:hover {
+		color: #4a4a4a;
+	}
+
+/* ---- Layout Containers ---- */
+
+.main{
+margin-top: 60px !important;
+margin-bottom: 40px;
+}
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #333;
+	text-transform: uppercase;
+	padding: 3.2em 0;
+}
+
+.col {
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+
+.wrapper{
+background-color: #fff;
+}
+
+.main-footer {
+	padding: 2em 0;
+	margin-top: 30px;
+	max-width: 400px;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+
+.main-footer span {
+font-weight: 200;
+font-size: 14px;
+color: #a7a3a3;
+}
+
+.main-footer ul {
+margin-top: 20px;
+}
+
+.main-footer li{
+font-weight: 300;
+font-size: 12px;	
+}
+
+.main-footer strong{
+color: #a7a3a3;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 2;
+}
+
+.main-img{
+display: block;
+text-align: center;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 68px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+		.column{
+	padding-left: 4em;
+}
+
+
+		.wrapper{
+	margin-top: 60px !important;
+	}
+
+	.name,
+	 .col,
+	 .column{
+		float: left;
+	}
+
+	.primary,
+	.secondary,
+	.tertiary {
+		width: 50%;
+	}
+
+	.main-desc,
+	.main-img {
+		width: 50%;
+	}
+
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+		border: none;
+	  text-decoration:none; 
+	}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+
+	.primary,
+	.secondary,
+	.tertiary {
+		width:33.3%;
+	}
+
+	.main-desc {
+	width: 60%;
+	}
+
+	.main-img{
+	width: 40%;
+	}
+
+	.row {
+	clear: left;
+	}
+}
