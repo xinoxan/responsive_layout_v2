@@ -48,6 +48,10 @@ figure {
 	position: relative;
 }
 
+footer{
+margin-bottom: 40px;
+}
+
 .caption {
 	margin-top: 10px;
 	text-align: center;
@@ -94,20 +98,26 @@ figure {
 
 /* ---- Navigation ---- */
 
-.name {
+.name  {
 	font-size: 1.25em;
 	text-align: center;
 }
+
 
 .main-nav {
 	margin-top: 5px;
 }
 
 	.name a,
-	.main-nav a {
-		display: block;
+	.main-nav a,
+	 {
+		
 		text-align: center;
 		padding: 10px 15px;
+	}
+
+	.back-to-top a{
+	padding: 10px 0;	
 	}
 	
 	.main-nav a {
@@ -123,7 +133,7 @@ figure {
 /* ---- Layout Containers ---- */
 
 .main{
-margin-top: 60px !important;
+margin-top: 40px !important;
 margin-bottom: 40px;
 }
 
@@ -143,6 +153,7 @@ margin-bottom: 40px;
 	padding: 3.2em 0;
 }
 
+.name,
 .col {
 	padding-right: 2em;
 	padding-left: 2em;
@@ -205,6 +216,42 @@ display: block;
 text-align: center;
 }
 
+
+
+
+@media (max-width: 768px) {
+
+.main-nav li {
+display: none;
+}
+
+.back-to-top{
+display: inline-block;	
+}
+
+.name.subfooter{
+display: inline-block;
+}
+
+}
+
+@media (max-width:767px){
+.name.subfooter{
+float: left;
+padding: 20px;
+}
+
+.back-to-top{
+float: right;
+padding: 20px;
+}
+
+}
+
+
+
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -233,12 +280,15 @@ text-align: center;
 	padding-left: 4em;
 }
 
+	.name{
+	float: left;
+	}
+
 
 		.wrapper{
 	margin-top: 60px !important;
 	}
 
-	.name,
 	 .col,
 	 .column{
 		float: left;
@@ -264,6 +314,10 @@ text-align: center;
 	.main-nav li {
 		display: inline-block;
 		margin-left: 15px;
+	}
+
+	.back-to-top{
+	display: none;	
 	}
 
 	.tagline {
